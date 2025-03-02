@@ -31,50 +31,30 @@ class MainScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Text(
-                      "Jangan Lupa Coding Hari Ini!",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    children: [
-                      Image.asset('assets/images/coder.png', width: 150),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            // Image.asset('assets/images/coder.png', width: 150),
+            Image.asset('assets/images/coder.png', width: 150),
             const SizedBox(height: 20),
 
             // Kontainer Pertama (Teks utama)
             Container(
+              width: 350,
+              height: 100,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.blue[100],
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: const Column(
-                children: [
-                  Text("📚 Jika berhasil di-run, pasti ada yang salah.",
-                      style: TextStyle(fontSize: 16)),
-                  Text(
-                      "😴 Debugging adalah seni mengganti satu bug dengan bug lainnya.",
-                      style: TextStyle(fontSize: 16)),
-                  Text(
-                      "🚀 Deadline itu bukan batas waktu, tapi awal mula ngebut coding semalam suntuk",
-                      style: TextStyle(fontSize: 16)),
-                ],
+              child: Center(
+                child: Text(
+                  '''😴 Debugging adalah seni mengganti satu bug dengan bug lainnya.😁🙏''',
+                  textAlign:
+                      TextAlign.center, // fungsinya textnya menjadi rata tengah
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight:
+                        FontWeight.bold, // menggunakan style huruf tebal (bold)
+                    fontStyle: FontStyle.normal,
+                  ),
+                ),
               ),
             ),
 
